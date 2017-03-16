@@ -1,7 +1,7 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :username null: false
+      t.string :username, null: false
       t.string :pwd 
       t.string :email
       t.string :gravatar
