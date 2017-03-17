@@ -27,24 +27,24 @@ ActiveRecord::Schema.define(version: 20170316193010) do
 
   create_table "tasks", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "description"
+    t.string   "description", default: "set goals"
     t.date     "due_date"
-    t.boolean  "recurring"
-    t.boolean  "completed"
-    t.boolean  "postponed"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.boolean  "recurring",   default: false
+    t.boolean  "completed",   default: false
+    t.boolean  "postponed",   default: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   add_index "tasks", ["user_id"], name: "index_tasks_on_user_id"
 
   create_table "users", force: :cascade do |t|
-    t.string   "username",   null: false
-    t.string   "pwd"
+    t.string   "username",        null: false
+    t.string   "password_digest"
     t.string   "email"
     t.string   "gravatar"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

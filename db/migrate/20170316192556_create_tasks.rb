@@ -3,11 +3,11 @@ class CreateTasks < ActiveRecord::Migration
     create_table :tasks do |t|
       t.references :user, index: true
       
-      t.string :description
+      t.string :description, default: "set goals"
       t.date :due_date
-      t.boolean :recurring
-      t.boolean :completed
-      t.boolean :postponed
+      t.boolean :recurring, default: false
+      t.boolean :completed, default: false
+      t.boolean :postponed, default: false
 
       t.timestamps null: false
     end

@@ -8,10 +8,10 @@
 
 
 User.create([
-  { username: "ashleyyy", pwd: '23456', email: 'ashleyfisher@gmail.com',  gravatar: "'https://s.gravatar.com/avatar/4e24e73e2082b4db6128a8c8dee143eb?size=48&default=wavatar'" }, #user_id: 1
-  { username: "firstdummy", pwd: '56789', email: 'dummy@email.com', gravatar: "'https://s.gravatar.com/avatar/fb651279f4712e209991e05610dfb03a?size=48&default=wavatar'"}, #user_id: 2
-  { username: "secondfool", pwd: '56789', email: 'second@email.com', gravatar: "'https://s.gravatar.com/avatar/29e4aea606c385e351ca3f6bdb940e4c?size=48&default=wavatar'"}, #user_id: 3
-  { username: "madeupuser", pwd: '56789', email: 'madeupuser@email.com', gravatar: "'https://s.gravatar.com/avatar/df74afdcf05f6c1d3f62043ae6e0d588?size=48&default=wavatar'"} #user_id: 4
+  { username: "ashleyyy", password_digest: '23456', email: 'ashleyfisher@gmail.com',  gravatar: "'https://s.gravatar.com/avatar/4e24e73e2082b4db6128a8c8dee143eb?size=48&default=wavatar'" }, #user_id: 1
+  { username: "firstdummy", password_digest: '56789', email: 'dummy@email.com', gravatar: "'https://s.gravatar.com/avatar/fb651279f4712e209991e05610dfb03a?size=48&default=wavatar'"}, #user_id: 2
+  { username: "secondfool", password_digest: '56789', email: 'second@email.com', gravatar: "'https://s.gravatar.com/avatar/29e4aea606c385e351ca3f6bdb940e4c?size=48&default=wavatar'"}, #user_id: 3
+  { username: "madeupuser", password_digest: '56789', email: 'madeupuser@email.com', gravatar: "'https://s.gravatar.com/avatar/df74afdcf05f6c1d3f62043ae6e0d588?size=48&default=wavatar'"} #user_id: 4
 ])
 
 Task.create ([
