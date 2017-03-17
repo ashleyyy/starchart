@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'user#index'
+  root to: 'users#show'
 
   resources :users, only: [:new, :create, :show] do
     resources :tasks
